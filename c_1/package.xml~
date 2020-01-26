@@ -2,7 +2,7 @@
 <package format="2">
   <name>c_1</name>
   <version>1.0.0</version>
-  <description>The c_1 package</description>
+  <description>El paquete c_1 trata sobre como crear un publicador y subscriptor sencilo en python, ademas del manejo del algunos de los parametros del archivo launch y sobre el uso de los parametros estaticos</description>
 
   <maintainer email="thingsjimenez@gmail.com">Santiago Jiménez</maintainer>
 
