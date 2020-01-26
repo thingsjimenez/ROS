@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+	<arg name="status_val" default="offline" />
+	<param name="status" value="$(arg status_val)" />
+</launch>

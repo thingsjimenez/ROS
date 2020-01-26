@@ -1,0 +1,4 @@
+<launch>
+	<arg name="status_val" default="offline" />
+	<param name="status" value="$(arg status_val)" />
+</launch>

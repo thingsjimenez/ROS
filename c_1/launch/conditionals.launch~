@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch format="2">
+	<arg name="debug" default="log" />	
+	<arg name="sim_time" default="false" />	
+	<group if="$(arg sim_time)">
+		<param name="use_sim_time" value="$(arg sim_time)" />
+		<arg name="debug" value="screen" />
+	</group>
+	
+
+	<node name="my_pub" pkg="c_1" type="pub_node.py" output="$(arg debug)" />
+	<node name="my_sub" pkg="c_1" type="sub_node.py" />
+</launch>

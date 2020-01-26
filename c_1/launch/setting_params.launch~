@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+	<param name="my_integer" type="int" value="7" />
+	<param name="my_float" type="double" value="3.14" />
+	<param name="my_string" type="str" value="hello" />
+	<node pkg="c_1" type="test_params.py" name="PARAMS" />
+	<rosparam file="$(find c_1)/config/my_params.yaml" ns="prefix"/>
+</launch>

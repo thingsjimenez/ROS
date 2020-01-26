@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+	<arg name="ntop" default="/otro" />
+
+  <node name="my_pub" pkg="c_1" type="pub_node.py" output="screen">
+		<remap from="/chatter" to="$(arg ntop)" />
+	</node>
+  <node name="my_sub" pkg="c_1" type="sub_node.py">
+		<remap from="/chatter" to="$(arg ntop)" />
+	</node>
+</launch>

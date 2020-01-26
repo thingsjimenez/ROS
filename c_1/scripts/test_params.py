@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+import rospy
+
+int_var = rospy.get_param("/my_integer", 1)
+float_var = rospy.get_param("/my_float")
+string_var = rospy.get_param("/my_string")
+
+rospy.init_node('PARAMS', anonymous=True)
+rospy.loginfo("Int: %s, Float: %s, String: %s", int_var, float_var, string_var)
+#rospy.spin()
